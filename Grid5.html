@@ -62,9 +62,35 @@
     </div>
 </nav>
 
+
     <main class="flex-shrink-0">
-       <div class="container">
+       <div class="container h-100 minHeight">
+           <div class="row">
+            <header>
+                <h1>Grid 5</h1>
+                <h3>Summary:</h3>
+                <p>shows you can change the order of columns</p>
+                <p>and even change the order based on media type</p>
+              </header>
+           </div>
            
+            <div class="row h-100 row-cols-1 row-cols-md-3 gy-1">
+                <div class="col col-md-3 order-last order-md-first">
+                    <div class="bg-secondary text-light h-100">
+                        COL 1
+                    </div>
+                </div>
+                <div class="col col-md-6 ">
+                    <div class="bg-dark text-light h-100">
+                        COL 2
+                    </div>
+                </div>
+                <div class="col col-md-3 order-first order-md-last">
+                    <div class="bg-secondary text-light h-100">
+                        Col 3
+                    </div>
+                </div>
+            </div>
        </div>
     </main>
     <footer class="footer mt-auto py-3 bg-dark sticky-footer">
@@ -79,21 +105,3 @@
 </body>
 
 </html>
-
-
-   
-
-  <main class="flex-shrink-0">
-        <div class="container mt-1 minHeight h-100">
-            <div class="row row-cols-1 row-cols-md-2 h-100">
-                <div class="col">
-                    <div class="bg-dark text-light h-100 p-3">
-                       COL ONE                       
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="bg-secondary text-light h-100 p-3">COL TWO</div>
-                </div>
-            </div>
-        </div>
-    </main>
